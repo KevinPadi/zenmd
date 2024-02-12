@@ -1,4 +1,4 @@
-import '@mdxeditor/editor/style.css';
+import '@mdxeditor/editor/style.css'
 import { 
   IconAlignLeft, 
   IconAlignRight, 
@@ -30,10 +30,10 @@ import {
   MDXEditor,  
   headingsPlugin, 
   linkDialogPlugin, 
-  linkPlugin, 
   listsPlugin, 
   markdownShortcutPlugin, 
   quotePlugin, 
+  linkPlugin, 
   UndoRedo, 
   BoldItalicUnderlineToggles, 
   toolbarPlugin,
@@ -115,9 +115,6 @@ function App() {
         return <IconCode />; // Si no hay un icono correspondiente, devuelve un ícono por defecto
     }
   }
-
-
-//TODO: PONE EL LINTER PORFAVOR
 
   return (
     <div className='min-h-screen max-w-screen bg-neutral-950 flex justify-center overflow-hidden'>
