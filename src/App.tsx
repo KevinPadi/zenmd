@@ -159,7 +159,7 @@ function App() {
           })
         ]} 
         iconComponentFor={iconComponentFor} // Pasamos la función iconComponentFor aquí
-        className='prose prose-invert prose-p:text-lg dark-theme border-r-[1px] border-l-[1px] border-neutral-900 min-w-[700px] max-w-[700px] prose-sky prose-headings:text-sky-100 px-2 bg-neutral-900/20'
+        className='prose prose-invert prose-p:text-lg dark-theme border-r-[1px] border-l-[1px] border-neutral-900 min-w-[750px] max-w-[700px] prose-sky prose-headings:text-sky-100 px-2 bg-neutral-900/20'
       />
     </div>
   )
