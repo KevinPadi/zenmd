@@ -24,7 +24,7 @@ import {
   IconArrowBackUp, 
   IconArrowForwardUp,
   IconMinus,
-  IconSquareCheck
+  IconChevronDown
 } from '@tabler/icons-react'
 import { 
   MDXEditor,  
@@ -47,7 +47,8 @@ import {
   CreateLink,
   thematicBreakPlugin,
   ListsToggle,
-  InsertThematicBreak
+  InsertThematicBreak,
+  BlockTypeSelect
 } from '@mdxeditor/editor'
 
 function App() {
@@ -109,8 +110,8 @@ function App() {
         return <IconLink stroke={1.5}/>
       case 'horizontal_rule':
         return <IconMinus stroke={1.5}/>
-      case 'check':
-        return <IconSquareCheck stroke={1.5}/>
+      case 'arrow_drop_down':
+        return <IconChevronDown stroke={1.5}/>
       default:
         return <IconCode />; // Si no hay un icono correspondiente, devuelve un ícono por defecto
     }
@@ -152,6 +153,7 @@ function App() {
                 <InsertTable />
                 <InsertThematicBreak />
                 <Separator />
+                <BlockTypeSelect />
               </>
             )
           })
