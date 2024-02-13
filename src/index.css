@@ -21,3 +21,19 @@
 .mdxeditor-select-content {
   background-color: #0a0a0a;
 }
+
+._primaryButton_11eqz_460 {
+  color: white;
+}
+
+._secondaryButton_11eqz_461 {
+  color: white;
+  border: 1px solid crimson;
+}
+
+._primaryButton_11eqz_460:hover,
+._secondaryButton_11eqz_461:hover {
+  background-color: #171717;
+  transition: all 100ms ease-in;
+  cursor: pointer;
+}
