@@ -24,7 +24,11 @@ import {
   IconArrowBackUp, 
   IconArrowForwardUp,
   IconMinus,
-  IconChevronDown
+  IconChevronDown,
+  IconExternalLink,
+  IconPencil,
+  IconClipboardCopy,
+  IconLinkOff
 } from '@tabler/icons-react'
 import { 
   MDXEditor,  
@@ -112,6 +116,14 @@ function App() {
         return <IconMinus stroke={1.5}/>
       case 'arrow_drop_down':
         return <IconChevronDown stroke={1.5}/>
+      case 'content_copy':
+        return <IconClipboardCopy stroke={1.5}/>
+      case 'edit':
+        return <IconPencil stroke={1.5}/>
+      case 'open_in_new':
+        return <IconExternalLink stroke={1.5}/>
+      case 'link_off':
+        return <IconLinkOff stroke={1.5}/>
       default:
         return <IconCode />; // Si no hay un icono correspondiente, devuelve un ícono por defecto
     }
