@@ -9,6 +9,9 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    fontFamily : {
+      'sans' : ['Montserrat', 'Open Sans']
+    },
     extend: {
     },
   },

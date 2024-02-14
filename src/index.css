@@ -9,6 +9,7 @@
   --basePageBg: black;
   --baseBgActive: #1e40af;
   --baseText: #737373;
+  font-family: 'Open Sans';
 }
 
 .mdxeditor-toolbar {
