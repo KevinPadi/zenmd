@@ -130,7 +130,7 @@ function App() {
   }
 
   return (
-    <div className='min-h-screen max-w-screen bg-neutral-950 flex justify-center overflow-hidden'>
+    <div className='min-h-screen min-w-screen bg-neutral-950 flex justify-center overflow-hidden'>
       <MDXEditor 
         markdown='' 
         autoFocus 
