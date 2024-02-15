@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '@radix-ui/colors/cyan.css';
-@import '@radix-ui/colors/cyan-dark.css';
-
 .dark-editor {
   --basePageBg: black;
   --baseBgActive: #1e40af;
