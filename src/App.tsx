@@ -171,7 +171,7 @@ function App() {
           })
         ]} 
         iconComponentFor={iconComponentFor} // Pasamos la función iconComponentFor aquí
-        className='prose prose-invert prose-p:text-lg dark-theme dark-editor border-r-[1px] border-l-[1px] border-neutral-900 min-w-[750px] max-w-[700px] prose-sky prose-headings:text-neutral-200 px-2 bg-neutral-950'
+        className='prose prose-invert dark-theme dark-editor border-r-[1px] border-l-[1px] border-neutral-900 min-w-[750px] max-w-[700px] prose-sky prose-headings:text-neutral-200 prose-headings:font-bold px-2 bg-neutral-950 prose-p:text-neutral-200 prose-p:leading-normal caret-blue-500 prose-code:text-sky-500 prose-code:before-content-[""] prose-code:after-content-[""]'
       />
     </div>
   )
