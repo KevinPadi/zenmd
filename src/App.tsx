@@ -25,6 +25,7 @@ import {
   IconArrowForwardUp,
   IconMinus,
   IconChevronDown,
+  IconChevronRight,
   IconExternalLink,
   IconPencil,
   IconClipboardCopy,
@@ -54,6 +55,15 @@ import {
   InsertThematicBreak,
   BlockTypeSelect
 } from '@mdxeditor/editor'
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+
 
 function App() {
   // Función para cambiar los iconos por defecto
@@ -130,7 +140,22 @@ function App() {
   }
 
   return (
-    <div className='min-h-screen min-w-screen bg-neutral-950 flex justify-center overflow-hidden'>
+    <div className='min-h-screen min-w-screen bg-neutral-950 flex justify-center overflow-hidden text-white relative'>
+      <Sheet>
+        <SheetTrigger className='top-0 bottom-0 left-2 h-screen fixed'>
+          <IconChevronRight stroke={2.5} className='stroke-neutral-400 hover:stroke-neutral-100 size-8 sotr'/>
+        </SheetTrigger>
+        <SheetContent side='left' className=''>
+          <SheetHeader>
+            <SheetTitle>Are you absolutely sure?</SheetTitle>
+            <SheetDescription>
+              This action cannot be undone. This will permanently delete your account
+              and remove your data from our servers.
+            </SheetDescription> 
+          </SheetHeader>
+        </SheetContent>
+      </Sheet>
+
       <MDXEditor 
         markdown='' 
         autoFocus 
